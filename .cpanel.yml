@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - /bin/cp -R * /home/pspdqnmanrz9/public_html/
