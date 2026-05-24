@@ -1,0 +1,167 @@
+{
+  "gallery": [
+    {
+      "section": "",
+      "items": [
+        {
+          "src": "/characters/lunaris/gallery/new_pic.png",
+          "thumb": "/characters/lunaris/gallery/thumb/new_pic.webp",
+          "created": "May 2026",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/lunaris/gallery/new_design.png",
+          "thumb": "/characters/lunaris/gallery/thumb/new_design.webp",
+          "created": "May 2026",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+
+    {
+      "section": "Old Design",
+      "items": [
+        {
+          "src": "/characters/lunaris/gallery/original_ref.png",
+          "thumb": "/characters/lunaris/gallery/thumb/original_ref.webp",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/lunaris/gallery/rp_tracker.png",
+          "thumb": "/characters/lunaris/gallery/thumb/rp_tracker.webp",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/multiple/gallery/arguments.gif",
+          "thumb": "/characters/multiple/gallery/thumb/arguments.gif",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/lunaris/gallery/lunaris_manip.png",
+          "thumb": "/characters/lunaris/gallery/thumb/lunaris_manip.webp",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/lunaris/gallery/boo.jpg",
+          "thumb": "/characters/lunaris/gallery/thumb/boo.webp",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/lunaris/gallery/smile.jpg",
+          "thumb": "/characters/lunaris/gallery/thumb/smile.webp",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/lunaris/gallery/grr.jpg",
+          "thumb": "/characters/lunaris/gallery/thumb/grr.webp",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/lunaris/gallery/style_imitations.png",
+          "thumb": "/characters/lunaris/gallery/thumb/style_imitations.webp",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": ""
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/lunaris/gallery/art_by_the_nazi.png",
+          "thumb": "/characters/lunaris/gallery/thumb/art_by_the_nazi.webp",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "lilafly",
+              "url": "https://www.furaffinity.net/user/lilafly/"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

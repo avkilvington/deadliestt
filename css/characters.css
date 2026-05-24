@@ -1,0 +1,480 @@
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------- Main Character page layout starts here -------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+.directory-main {
+    width: min(1000px, calc(100% - 4rem));
+    margin: 4rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.character-directory {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.character-directory-card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 2rem;
+    align-items: center;
+
+    text-decoration: none;
+    color: inherit;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.character-directory-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.character-directory-card img {
+    width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* --------------------------------- Main Character page layout ends here --------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+.character-intro {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.character-intro h1 {
+    font-family: var(--header-font);
+    font-size: 5rem;
+    margin: 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, .5),
+                    0 0 10px rgba(255, 255, 255, .3);
+}
+
+.character-intro p {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.info-card h2 {
+    font-family: var(--header-font);
+    font-size: 2.2rem;
+    margin-top: -.7rem;
+    margin-bottom: 1rem;
+}
+
+.character-overview {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: stretch;
+}
+
+.character-overview .info-card {
+    max-height: 607px;
+
+}
+
+.character-portrait {
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    object-fit: contain;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.character-overview-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.profile-item {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.profile-label {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.profile-value {
+    font-size: .9rem;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* --------------------------------- Gallery and Lightbox styles --------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+.archive-card {
+    background: var(--info-card-gradient);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: var(--info-card-border);
+    border-radius: 1.25rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+    padding: 2rem;
+    overflow: hidden;
+    width: min(1000px, 100% - 2rem);
+    margin-inline: auto;
+
+    transition: width 2s ease, border-radius 2s ease, padding 2s ease;
+}
+
+.archive-card h2 {
+    font-family: var(--header-font);
+    font-size: 2.2rem;
+    margin-top: -.7rem;
+    margin-bottom: 1rem;
+}
+
+body.gallery-expanded .archive-card {
+    width: calc(100% - 2rem);
+    border-radius: 1.25rem;
+}
+
+body.gallery-expanded .gallery-section-grid {
+    grid-template-columns: repeat(auto-fit, 150px);
+}
+
+.gallery-section-grid .gallery-thumb:nth-child(n+11) {
+    display: none;
+}
+
+body.gallery-expanded .gallery-section-grid .gallery-thumb:nth-child(n+11) {
+    display: block;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.gallery-section, .literature-section {
+    width: 100%;
+}
+
+.literature-section {
+    display: none;
+}
+
+body.gallery-expanded .literature-section {
+    display: block;
+}
+
+.gallery-section-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(50px, 150px));
+    gap: 1rem;
+}
+
+.gallery-hidden-section {
+    display: none;
+}
+
+body.gallery-expanded .gallery-hidden-section {
+    display: block;
+}
+
+.gallery-placeholder {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.gallery-thumb {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.gallery-thumb img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    display: block;
+    filter: grayscale(80%) brightness(.8);
+    border-radius: 0.75rem;
+    border: 1px solid var(--info-card-border);
+    transition: transform 1s ease, filter 1s ease;
+}
+
+.gallery-thumb:hover img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+.gallery-grid .gallery-thumb:nth-child(n + 11) {
+    display: none;
+}
+
+body.gallery-expanded .gallery-grid .gallery-thumb {
+    display: block;
+}
+
+body.gallery-expanded .character-extra-sections {
+    opacity: 0;
+    max-height: 0;
+}
+
+.character-extra-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 1;
+    max-height: 3000px;
+    overflow: hidden;
+    transition: opacity 2s ease, max-height 2s ease;
+}
+
+
+body.gallery-expanded .character-gallery {
+    grid-column: 1 / -1;
+}
+
+.gallery-toggle {
+    border: 1px solid var(--info-card-border);
+    border-radius: 999px;
+    padding: 0.65rem 1.25rem;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+    margin-left: auto;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.gallery-toggle:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: var(--info-card-border);
+    transform: translateY(-1px);
+}
+
+.gallery-toggle:active {
+    transform: translateY(0);
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* --------------------------------- Gallery and Lightbox styles --------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: none;
+    place-items: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.lightbox.is-open {
+    display: grid;
+}
+
+.lightbox-window {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: min(1200px, 100vw);
+    max-height: 80vh;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    background: var(--lightbox-bg);
+    border: 1px solid var(--info-card-border);
+    border-radius: 1.25rem;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,0.5);
+}
+
+.lightbox-art {
+    flex: 1 1 auto;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+.lightbox-art img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+}
+
+#lightbox-image {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    margin-inline: auto;
+}
+
+.lightbox-literature {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 1.5rem;
+    line-height: 1.7;
+}
+
+.lightbox-details {
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.lightbox-details p {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.lightbox-details a {
+    color: var(--text-main-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.lightbox-details a:hover {
+    color: var(--hover-color);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                 0 0 10px rgba(255, 255, 255, 0.6),
+                 0 0 20px rgba(255, 255, 255, 0.4);
+    letter-spacing: .1em;
+}
+
+.lightbox-meta p:not(:last-child)::after {
+    content: "|";
+    margin-left: 0.5rem;
+    opacity: 0.5;
+}
+
+.lightbox-meta {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.lightbox-meta p {
+    margin: 0;
+}
+
+#lightbox-notes {
+    margin-top: 0.5rem;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: rgba(0, 0, 0, 0.45);
+
+    color: var(--text-main);
+
+    width: 2.5rem;
+    height:2.5rem;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 1.5rem;
+    line-height: 1;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        opacity 0.3s ease;
+
+    opacity: 0.7;
+
+    z-index: 5;
+}
+
+.lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.12);
+
+    transform:
+        translateY(-50%)
+        scale(1.08);
+
+    opacity: 1;
+}
+
+.lightbox-prev {
+    left: 1rem;
+}
+
+.lightbox-next {
+    right: 1rem;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    border: none;
+    background: transparent;
+    color: var(--text-main);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+:root {
+    --lightbox-bg: rgba(255, 255, 255, 0.03);
+}

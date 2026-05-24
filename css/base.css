@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'centurygothic';
+    src: url('../assets/fonts/gothic.woff2') format('woff2'),
+         url('../assets/fonts/gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'cursive';
+  src: url('../assets/fonts/cursive.woff2') format('woff2'),
+       url('../assets/fonts/cursive.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'blacksword';
+  src: url('../assets/fonts/blacksword.woff2') format('woff2'),
+       url('../assets/fonts/blacksword.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'handwritten';
+  src: url('../assets/fonts/handwritten.woff2') format('woff2'),
+       url('../assets/fonts/handwritten.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+hr {
+  display: block;
+  border: 0px;
+  height: 20px;
+  width: 588px;
+  background-image: var(--divider-image);
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+/* --------------------------------- Homepage layout stuff starts here --------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+
+.home-welcome {
+  display: flex;
+  justify-content: center;
+  font-family: 'cursive', cursive;
+  font-size: 6rem;
+  margin: 0;
+  margin-bottom: -1rem;
+  text-align: center;
+  gap: 1rem;
+  text-shadow:  0 0 5px rgba(255, 255, 255, .5),
+                0 0 10px rgba(255, 255, 255, .3);
+}
+
+.home-flavor {
+  display: flex;
+  justify-content: center;
+  font-family: 'handwritten', cursive;
+  font-style: italic;
+  font-size: 2rem;
+  text-align: center;
+  margin: -1rem;
+}
+
+.info-card.omen-speech-card {
+  position: relative;
+  min-height: 190px;
+  padding: 2rem;
+  padding-left: 240px;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+.omen-speech-img {
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+  width: 250px;
+  max-height: 300px;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.omen-speech-text {
+  max-width: 700px;
+}
+
+.info-card.homepage-wanderings {
+  position: relative;
+  min-height: 220px;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.wandering-title {
+  font-family: 'handwritten', cursive;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.wandering-subtitle {
+  font-family: 'handwritten', cursive;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+/* --------------------------------- Homepage layout stuff ends here --------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+
+.site-layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.site-banner {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.65), transparent),
+    var(--banner-image);
+  background-size: cover;
+  background-position: center;
+  min-height: 7vh;
+  position: relative;
+  overflow: hidden;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.banner-title {
+  font-family: var(--banner-font);
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.site-nav {
+  background-color: var(--top-nav-color);
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  gap: 4rem;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.site-nav a {
+  color: var(--text-main-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: var(--hover-color);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+               0 0 10px rgba(255, 255, 255, 0.6),
+               0 0 20px rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.site-footer {
+  background-color: var(--footer-color);
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-credit {
+  color: var(--text-muted-color);
+}
+
+.footer-message {
+  color: var(--text-muted-more-color);
+  font-style: italic;
+  font-size: .8rem;
+}
+
+.sidebar {
+  background-color: var(--sidebar-color);
+  width: 200px;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar-top {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: sticky;
+  text-align: center;
+  width: 180px;
+}
+
+.character-quote {
+  font-style: italic;
+  font-size: .8rem;
+  color: var(--text-muted-color);
+  margin-bottom: 0.5rem;
+}
+
+.designer-credit {
+  font-size: .65rem;
+  color: var(--text-muted-more-color);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.designer-credit a {
+  color: var(--text-muted-more-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.designer-credit a:hover {
+  color: var(--hover-color);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+               0 0 10px rgba(255, 255, 255, 0.6),
+               0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.sidebar-nav {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.sidebar-nav a {
+  color: var(--text-main-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+  color: var(--hover-color);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+               0 0 10px rgba(255, 255, 255, 0.6),
+               0 0 20px rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.sidebar-pagedoll {
+margin-top: auto;
+width: 150px;
+position: sticky;
+bottom: 1rem;
+}
+
+.info-card {
+  background: var(--info-card-gradient);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: var(--info-card-border);
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+  padding: 2rem;
+  overflow: hidden;
+  width: min(1000px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+body {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.55)),
+      var(--background-image);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  font-family: var(--main-text-font);
+  color: var(--text-main-color);
+  height: 100%;
+}
+
+:root {
+  --main-text-font: "centurygothic", sans-serif;
+  --text-main-color: rgb(204, 204, 204);
+  --text-muted-color: rgb(90, 90, 90);
+  --text-muted-more-color: rgba(255, 255, 255, 0.15);
+  --hover-color: rgb(255, 255, 255);
+  --header-font: "handwritten", cursive;
+  --background-image: url('../assets/images/backgrounds/cosmic_horror.jpg');
+  --banner-image: url('../assets/images/backgrounds/banner.gif');
+  --banner-font: "blacksword", serif;
+  --top-nav-color: rgb(11, 11, 11);
+  --sidebar-color: rgb(8, 8, 8);
+  --footer-color: rgb(11, 11, 11);
+  --info-card-gradient: linear-gradient( rgba(0, 0, 5, .55), rgba(0, 0, 5, .25) );
+  --info-card-border:  1px solid rgba(255, 255, 255, 0.08);
+  --divider-image: url('../assets/images/dividers/divider.gif');
+}

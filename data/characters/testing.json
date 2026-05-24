@@ -1,0 +1,99 @@
+{
+  "gallery": [
+    {
+      "section": "",
+      "items": [
+        {
+          "src": "/characters/lunaris/gallery/lunaris_manip.png",
+          "thumb": "/characters/lunaris/gallery/thumb/",
+          "created": "May 2026",
+          "tags": ["current design", "reference"],
+          "artists": [
+            {
+              "name": "Alison",
+              "url": ""
+            }
+          ],
+          "note": "Primary modern reference for Lunaris."
+        },
+
+        {
+          "src": "/images/characters/lunaris/gallery/full/lunaris-002.png",
+          "thumb": "/images/characters/lunaris/gallery/thumbs/lunaris-002.jpg",
+          "created": "May 2026",
+          "tags": ["current design"],
+          "artists": [
+            {
+              "name": "Alison",
+              "url": ""
+            },
+            {
+              "name": "Friend Name",
+              "url": "https://example.com"
+            }
+          ],
+          "note": "Collaboration piece."
+        }
+      ]
+    },
+
+    {
+      "section": "Old Designs",
+      "items": [
+        {
+          "src": "/images/characters/lunaris/gallery/full/lunaris-old-001.png",
+          "thumb": "/images/characters/lunaris/gallery/thumbs/lunaris-old-001.jpg",
+          "created": "2014",
+          "tags": ["old design"],
+          "artists": [
+            {
+              "name": "Alison",
+              "url": ""
+            }
+          ],
+          "note": "Ancient fossil era."
+        }
+      ]
+    }
+  ],
+
+  "literature": [
+    {
+      "section": "Stories",
+      "items": [
+        {
+          "title": "Moonlit Reverie",
+          "url": "/characters/lunaris/literature/moonlit-reverie.html",
+          "created": "May 2026",
+          "tags": ["story", "character exploration"],
+          "artists": [
+            {
+              "name": "Alison",
+              "url": ""
+            }
+          ],
+          "note": "A short reflective piece about Lunaris."
+        }
+      ]
+    },
+
+    {
+      "section": "Worldbuilding Notes",
+      "items": [
+        {
+          "title": "The Cathedral Beneath the Sea",
+          "url": "/characters/lunaris/literature/cathedral-beneath-sea.html",
+          "created": "2025",
+          "tags": ["worldbuilding"],
+          "artists": [
+            {
+              "name": "Alison",
+              "url": ""
+            }
+          ],
+          "note": "Archived lore notes."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>deadliestt — Coming Soon</title>
+
+  <!-- Optional while you're in prelaunch; remove when you want it indexed -->
+  <!-- <meta name="robots" content="noindex,nofollow"> -->
+
+  <!-- Social share (update when you add a hero image) -->
+  <meta property="og:title" content="deadliestt" />
+  <meta property="og:description" content="A dark little star is forming. Site launching soon." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-preview.png" />
+  <meta name="theme-color" content="#0b0b0c" />
+
+  <style>
+    /* ------------------------------
+       GLOBAL / THEME
+    --------------------------------*/
+    :root{
+      --bg: #0b0b0c;           /* near-black */
+      --bg-2: #111115;         /* slightly lighter panels */
+      --ink: #e9e6ef;          /* bone-white text */
+      --muted: #b9b4c4;        /* muted text */
+      --accent: #7a2e8a;       /* royal violet */
+      --accent-2: #ca1f5a;     /* blood-rose */
+      --line: #222228;         /* hairline borders */
+      --glow: 0 0 0.8rem rgba(202,31,90,.18);
+      --radius: 14px;
+      --shadow-1: 0 10px 30px rgba(0,0,0,.55);
+      --shadow-2: 0 30px 80px rgba(0,0,0,.65);
+      --noise-opacity: .07;
+    }
+    @media (prefers-color-scheme: dark){:root{color-scheme: dark;}}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font: 16px/1.6 ui-sans-serif, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--ink);
+      background: radial-gradient(1200px 600px at 70% -10%, #1a1720 0%, transparent 60%),
+                  radial-gradient(900px 400px at 20% 0%, #17141c 0%, transparent 60%),
+                  var(--bg);
+      overflow-x:hidden;
+    }
+
+    /* Subtle film grain (pure CSS) */
+    .noise::before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.07"/></svg>');
+      mix-blend-mode:soft-light;
+      opacity:var(--noise-opacity);
+    }
+
+    a{color:inherit; text-decoration:none}
+    .btn{
+      display:inline-block; padding:.85rem 1.15rem;
+      border:1px solid color-mix(in oklab, var(--accent), white 25%);
+      border-radius: 999px;
+      background: linear-gradient(180deg, color-mix(in oklab, var(--accent), black 65%), color-mix(in oklab, var(--accent), black 85%));
+      box-shadow: var(--glow), inset 0 0 0 1px rgba(255,255,255,.06);
+      color: #f5e9ff; font-weight:600; letter-spacing:.2px;
+      transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn:hover{ transform: translateY(-1px); box-shadow: 0 10px 24px rgba(122,46,138,.35), var(--glow);}
+    .btn.alt{
+      border-color: color-mix(in oklab, var(--accent-2), white 20%);
+      background: linear-gradient(180deg, color-mix(in oklab, var(--accent-2), black 60%), color-mix(in oklab, var(--accent-2), black 85%));
+    }
+
+    hr.sep{
+      border:0; height:1px; background:linear-gradient(90deg, transparent, var(--line), transparent);
+      margin: 2.5rem 0;
+    }
+
+    /* ------------------------------
+       HEADER / HERO
+    --------------------------------*/
+    header{
+      position:relative; z-index:1;
+      max-width:1100px; margin:0 auto; padding: 2rem 1.25rem 0;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:1rem;
+    }
+    .logo{
+      display:flex; align-items:center; gap:.9rem;
+      text-transform: lowercase; letter-spacing:.4px;
+      font-weight:700;
+    }
+    .logo-icon{
+      width:40px; height:40px; display:grid; place-items:center;
+      border-radius:50%; background: #15131a; border:1px solid var(--line);
+      box-shadow: var(--shadow-1), inset 0 0 20px rgba(122,46,138,.25);
+    }
+    .logo b{font-family: ui-serif, Georgia, "Times New Roman", serif; font-weight:800}
+    nav{display:flex; gap:.75rem; flex-wrap:wrap}
+    nav a{
+      padding:.55rem .8rem; border:1px solid var(--line);
+      border-radius:999px; color:var(--muted); font-size:.9rem;
+      background: color-mix(in oklab, var(--bg-2), black 5%);
+      opacity:.8;
+    }
+    nav a[data-disabled="true"]{cursor:not-allowed; position:relative}
+    nav a[data-disabled="true"]::after{
+      content:"soon"; position:absolute; top:-9px; right:-6px; font-size:.65rem; color:#fff;
+      background:linear-gradient(180deg, #5c1c69, #3e103f); border:1px solid #7a2e8a; border-radius:6px; padding:.1rem .35rem;
+      box-shadow: var(--shadow-1);
+    }
+
+    .hero{
+      max-width:1100px; margin: 2.2rem auto 0; padding: 0 1.25rem 2.5rem;
+      display:grid; grid-template-columns: 1.2fr .8fr; gap:2rem; align-items:end;
+    }
+    @media (max-width: 900px){ .hero{ grid-template-columns: 1fr; } }
+    .card{
+      background: linear-gradient(180deg, color-mix(in oklab, var(--bg-2), black 2%), color-mix(in oklab, var(--bg-2), black 10%));
+      border:1px solid var(--line); border-radius: var(--radius);
+      box-shadow: var(--shadow-2);
+      overflow:hidden;
+    }
+    .hero .card{
+      padding: clamp(1.25rem, 1.5vw + .5rem, 1.75rem);
+    }
+    h1{
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: clamp(2.2rem, 3.8vw + .5rem, 4rem);
+      line-height:1.05; margin: 0 0 .75rem;
+      letter-spacing:.2px;
+      text-shadow: 0 0 18px rgba(122,46,138,.25);
+    }
+    .blackletter{
+      font-variant-ligatures: discretionary-ligatures;
+      letter-spacing:.5px;
+    }
+    .tag{
+      display:inline-flex; align-items:center; gap:.5rem;
+      font-size:.9rem; color:var(--muted);
+      padding:.35rem .6rem; border:1px solid var(--line);
+      border-radius:999px; background: #131218;
+    }
+    .hero p{margin:.75rem 0 1.25rem; color:var(--muted)}
+    .cta-row{display:flex; gap:.6rem; flex-wrap:wrap}
+
+    /* Emblem panel */
+    .emblem{
+      display:grid; place-items:center; padding: 1.5rem; position:relative;
+      min-height: 280px;
+    }
+    .emblem svg{width: 140px; height: 140px; filter: drop-shadow(0 12px 30px rgba(0,0,0,.65));}
+    .emblem .halo{
+      position:absolute; inset:-12% -8% -8% -8%; pointer-events:none;
+      background: radial-gradient(40% 30% at 50% 40%, rgba(122,46,138,.25), transparent 60%),
+                  radial-gradient(60% 35% at 48% 48%, rgba(202,31,90,.16), transparent 65%);
+      filter: blur(18px);
+    }
+
+    /* ------------------------------
+       PANELS
+    --------------------------------*/
+    .wrap{max-width:1100px; margin:0 auto; padding: 0 1.25rem 3.5rem;}
+    .panel{ display:grid; grid-template-columns: 1fr 1fr; gap:1.25rem; }
+    @media (max-width: 900px){ .panel{ grid-template-columns: 1fr; } }
+    .panel .card{ padding: 1.25rem 1.25rem; }
+
+    .panel h2{
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      margin:.25rem 0 0; letter-spacing:.2px; font-size:1.6rem;
+    }
+    .panel p{color:var(--muted); margin:.35rem 0 .75rem}
+
+    .list{
+      display:grid; gap:.65rem; margin:.5rem 0 1rem; padding:0; list-style:none;
+    }
+    .list li{
+      display:flex; gap:.6rem; align-items:flex-start;
+      padding:.6rem .7rem; border:1px dashed var(--line); border-radius:10px;
+      background: #121118;
+    }
+
+    .soon-pill{
+      display:inline-block; font-size:.78rem; color:#fff;
+      background:linear-gradient(180deg, #812049, #5e1434);
+      border:1px solid #8c264f; border-radius:999px; padding:.25rem .55rem;
+      box-shadow: var(--shadow-1);
+      margin-left:.5rem;
+    }
+
+    /* ------------------------------
+       FOOTER
+    --------------------------------*/
+    footer{
+      border-top:1px solid var(--line);
+      background:#0a0a0c; color:var(--muted);
+      padding: 1.25rem; text-align:center; font-size:.92rem;
+    }
+    .socials{display:flex; gap:.8rem; justify-content:center; margin:.5rem 0}
+    .socials a{border:1px solid var(--line); padding:.5rem .7rem; border-radius:999px; background:#131218}
+
+    /* ------------------------------
+       Atmosphere: fog & floaters (reduced if prefers-reduced-motion)
+    --------------------------------*/
+    .fog, .floaters{pointer-events:none; position:fixed; inset:0; z-index:0}
+    .fog canvas{position:absolute; inset:0; width:100%; height:100%; opacity:.16; filter:blur(1px);}
+    .floaters{ display:block; }
+    .floater{
+      position:absolute; width:2px; height:2px; border-radius:50%; background:#fff; opacity:.18;
+      animation: rise linear var(--d) infinite; transform: translateY(100vh) translateX(var(--x, 0));
+      filter: drop-shadow(0 0 6px rgba(255,255,255,.2));
+    }
+    @keyframes rise{ to { transform: translateY(-10vh) translateX(var(--x, 0)); opacity:0; } }
+
+    @media (prefers-reduced-motion: reduce){
+      .floaters, .fog{ display:none; }
+      .btn, nav a{ transition: none; }
+    }
+
+    /* ------------------------------
+       Accessible focus
+    --------------------------------*/
+    :focus-visible{
+      outline: 2px solid color-mix(in oklab, var(--accent), white 15%);
+      outline-offset: 2px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body class="noise">
+  <!-- Atmospheric layers -->
+  <div class="fog" aria-hidden="true"><canvas id="fog"></canvas></div>
+  <div class="floaters" aria-hidden="true" id="floaters"></div>
+
+  <header>
+    <div class="logo" aria-label="deadliestt home">
+      <span class="logo-icon" aria-hidden="true">
+        <!-- Minimal skull + star SVG mark -->
+        <svg viewBox="0 0 64 64" width="28" height="28" role="img" aria-label="skull">
+          <g fill="#ded6ea">
+            <path d="M32 6c-11.6 0-21 9.4-21 21 0 7.9 4.4 14.7 10.9 18.2V52a3 3 0 0 0 3 3h2.5a2 2 0 0 0 2-2v-3h4v3a2 2 0 0 0 2 2H38a3 3 0 0 0 3-3v-6.8C48.8 41.8 53 35 53 27 53 15.4 43.6 6 32 6ZM24 30a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm16 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+            <circle cx="32" cy="12" r="2.2"/>
+          </g>
+          <g transform="translate(48 10)" fill="#ca1f5a">
+            <path d="M4 0l1.1 3.2L8 4 5.1 5.1 4 8 2.9 5.1 0 4l2.9-.8L4 0z"/>
+          </g>
+        </svg>
+      </span>
+      <b>deadliestt</b>
+    </div>
+
+    <nav aria-label="Primary">
+      <a href="#" data-disabled="true" aria-disabled="true" tabindex="-1">Gallery</a>
+      <a href="#" data-disabled="true" aria-disabled="true" tabindex="-1">Worlds</a>
+      <a href="#" data-disabled="true" aria-disabled="true" tabindex="-1">Shop</a>
+      <a href="#" rel="noopener">Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="card">
+        <span class="tag" aria-hidden="true">⟡ goth / occult / starcore</span>
+        <h1 class="blackletter">A dark little star is forming.</h1>
+        <p>
+          <strong>deadliestt.com</strong> is becoming the home for my art, worlds, and the Star Goddess herself.
+          The crypt is being prepared—doors open soon.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="#notify">Notify me</a>
+          <a class="btn alt" href="#" rel="noopener">See my professional work</a>
+        </div>
+
+        <hr class="sep" />
+
+        <div id="notify" class="panel">
+          <div class="card" aria-labelledby="email-head">
+            <h2 id="email-head">Want a ping at launch?</h2>
+            <p>Drop your email and I’ll only message when the site goes live (and maybe one teaser).</p>
+            <form method="post" action="#" onsubmit="return window.fakeSubmit(event)" aria-label="Email signup">
+              <label for="email" class="sr-only">Email</label>
+              <input id="email" name="email" type="email" required
+                     placeholder="your@email.com"
+                     style="width:100%;padding:.9rem 1rem;border-radius:10px;border:1px solid var(--line);background:#0f0f14;color:var(--ink);margin:.2rem 0 .7rem;"/>
+              <button class="btn" type="submit">Add me to the list</button>
+              <p id="signup-feedback" role="status" aria-live="polite" style="margin:.5rem 0 0; color: var(--muted)"></p>
+            </form>
+          </div>
+
+          <div class="card" aria-labelledby="peek-head">
+            <h2 id="peek-head">What’s brewing</h2>
+            <ul class="list">
+              <li>⟢ Illustrated bestiary of god-touched felines and equines <span class="soon-pill">soon</span></li>
+              <li>⟢ Worlds: Wild Living Estate, city of moon-glass spires <span class="soon-pill">soon</span></li>
+              <li>⟢ Process notes, sketches, and star-blessed experiments</li>
+            </ul>
+            <a class="btn" href="#" aria-disabled="true" onclick="event.preventDefault()">Browse previews (soon)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card emblem" aria-hidden="true">
+        <div class="halo"></div>
+        <!-- Larger skull+star emblem (same mark, different scale) -->
+        <svg viewBox="0 0 64 64">
+          <defs>
+            <radialGradient id="g" cx="50%" cy="40%" r="70%">
+              <stop offset="0%" stop-color="#8b42a0"/>
+              <stop offset="70%" stop-color="#2b0a2f"/>
+              <stop offset="100%" stop-color="#0b0b0c"/>
+            </radialGradient>
+          </defs>
+          <circle cx="32" cy="32" r="26" fill="url(#g)" />
+          <g fill="#e9e6ef">
+            <path d="M32 10c-10.5 0-19 8.5-19 19 0 7.2 4 13.5 10 16.8V51a2.5 2.5 0 0 0 2.5 2.5H28a1.5 1.5 0 0 0 1.5-1.5V49h5v3a1.5 1.5 0 0 0 1.5 1.5H39.5A2.5 2.5 0 0 0 42 51v-5.2C48 42.6 51 36.2 51 29c0-10.5-8.5-19-19-19Zm-9 19a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm18 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+            <circle cx="32" cy="15" r="2"/>
+          </g>
+          <g transform="translate(46 12)" fill="#ca1f5a">
+            <path d="M4 0l1.1 3.2L8 4 5.1 5.1 4 8 2.9 5.1 0 4l2.9-.8L4 0z"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="panel">
+        <div class="card">
+          <h2>About the name</h2>
+          <p>
+            “deadliestt” is where the pretty meets the perilous: star-lore, soft velvet, gold hooves, and teeth.
+            Expect myth, science-fantasy, and a healthy disrespect for gravity.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Elsewhere</h2>
+          <p>Until launch, you can find my professional work and updates here:</p>
+          <div class="cta-row">
+            <a class="btn" href="#" rel="noopener">Portfolio</a>
+            <a class="btn alt" href="#" aria-disabled="true" onclick="event.preventDefault()">Instagram (soon)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials" aria-label="Social links">
+      <a href="#" aria-disabled="true" onclick="event.preventDefault()">Bluesky (soon)</a>
+      <a href="#" aria-disabled="true" onclick="event.preventDefault()">Mastodon (soon)</a>
+      <a href="#" aria-disabled="true" onclick="event.preventDefault()">ArtStation (soon)</a>
+    </div>
+    <div>© <span id="y"></span> deadliestt · crafted with stardust &amp; spite</div>
+  </footer>
+
+  <script>
+    // Year stamp
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Fake submit so you can deploy without backend yet
+    window.fakeSubmit = function (e){
+      e.preventDefault();
+      const out = document.getElementById('signup-feedback');
+      out.textContent = "Thanks! I’ll email you when the site opens.";
+      return false;
+    }
+
+    // Minimal “floating motes” and fog—disabled for reduced motion users.
+    (function(){
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(reduce) return;
+
+      // Floaters
+      const wrap = document.getElementById('floaters');
+      const COUNT = 40;
+      for(let i=0;i<COUNT;i++){
+        const s = document.createElement('span');
+        s.className = 'floater';
+        const left = Math.random()*100;
+        const dur = 20 + Math.random()*30;
+        const x = (Math.random()*20 - 10) + 'vh';
+        s.style.left = left + 'vw';
+        s.style.setProperty('--d', dur+'s');
+        s.style.setProperty('--x', x);
+        s.style.opacity = 0.08 + Math.random()*0.22;
+        wrap.appendChild(s);
+      }
+
+      // Soft perlin-ish fog on canvas (very lightweight)
+      const c = document.getElementById('fog');
+      const ctx = c.getContext('2d');
+      function size(){ c.width = innerWidth; c.height = innerHeight; }
+      size(); addEventListener('resize', size);
+
+      let t = 0;
+      function noise(x,y,seed){
+        const n = Math.sin(x*12.9898 + y*78.233 + seed)*43758.5453;
+        return n - Math.floor(n);
+      }
+      function draw(){
+        t += 0.002;
+        const w = c.width, h = c.height;
+        const img = ctx.createImageData(w, h);
+        for(let y=0; y<h; y+=3){
+          for(let x=0; x<w; x+=3){
+            const v = (noise(x*0.004, y*0.004, t*100) + noise(x*0.008, y*0.008, (t+10)*100))/2;
+            const col = Math.floor(255 * v * 0.35);
+            for(let yy=0; yy<3; yy++){
+              for(let xx=0; xx<3; xx++){
+                const idx = ((y+yy)*w + (x+xx)) * 4;
+                img.data[idx] = col;     // R
+                img.data[idx+1] = col;   // G
+                img.data[idx+2] = col;   // B
+                img.data[idx+3] = 20;    // A (very soft)
+              }
+            }
+          }
+        }
+        ctx.putImageData(img,0,0);
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+  </script>
+
+  <!-- Visually hidden utility -->
+  <style>
+    .sr-only{
+      position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;
+    }
+  </style>
+</body>
+</html>
