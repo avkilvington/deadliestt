@@ -4,101 +4,231 @@
       "section": "",
       "items": [
         {
-          "src": "/characters/lunaris/gallery/new_pic.png",
-          "thumb": "/characters/lunaris/gallery/thumb/new_pic.webp",
-          "created": "May 2026",
+          "src": "/characters/omen/gallery/omen_liticaharmony.gif",
+          "thumb": "/characters/omen/gallery//thumb/omen_liticaharmony.gif",
+          "created": "16 October 2020",
           "tags": [""],
           "artists": [
             {
-              "name": "deadliestt",
-              "url": ""
+              "name": "LiticaHarmony",
+              "url": "https://www.deviantart.com/LiticaHarmony"
             }
           ],
           "note": ""
         },
 
         {
-          "src": "/characters/lunaris/gallery/new_design.png",
-          "thumb": "/characters/lunaris/gallery/thumb/new_design.webp",
-          "created": "May 2026",
+          "src": "/characters/omen/gallery/omen_queerly.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_queerly.webp",
+          "created": "27 November 2018",
           "tags": [""],
           "artists": [
             {
-              "name": "deadliestt",
-              "url": ""
+              "name": "queerly",
+              "url": "https://toyhou.se/queerly"
+            }
+          ],
+          "note": "Initial design and first reference"
+        },
+
+        {
+          "src": "/characters/omen/gallery/omen_efanir_2.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_efanir_2.webp",
+          "created": "1 December 2020",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "efanir",
+              "url": "https://www.deviantart.com/enfanir"
             }
           ],
           "note": ""
         },
 
         {
-          "src": "/characters/lunaris/gallery/new_design.png",
-          "thumb": "/characters/lunaris/gallery/thumb/new_design.webp",
-          "created": "May 2026",
+          "src": "/characters/omen/gallery/omen_koel.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_koel.webp",
+          "created": "28 September 2020",
           "tags": [""],
           "artists": [
             {
-              "name": "deadliestt",
-              "url": ""
+              "name": "koel",
+              "url": "https://toyhou.se/Koel"
             }
           ],
           "note": ""
         },
 
         {
-          "src": "/characters/lunaris/gallery/new_design.png",
-          "thumb": "/characters/lunaris/gallery/thumb/new_design.webp",
-          "created": "May 2026",
+          "src": "/characters/omen/gallery/omen_crookeddoe.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_crookeddoe.webp",
+          "created": "4 September 2020",
           "tags": [""],
           "artists": [
             {
-              "name": "deadliestt",
-              "url": ""
+              "name": "crookeddoe",
+              "url": "https://www.deviantart.com/crookeddoe/art/v-o-i-d-853700308"
             }
           ],
           "note": ""
         },
 
         {
-          "src": "/characters/lunaris/gallery/new_design.png",
-          "thumb": "/characters/lunaris/gallery/thumb/new_design.webp",
-          "created": "May 2026",
+          "src": "/characters/omen/gallery/omen_queerly_hey-stardust.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_queerly_hey-stardust.webp",
+          "created": "7 May 2021",
           "tags": [""],
           "artists": [
             {
-              "name": "deadliestt",
-              "url": ""
+              "name": "queerly",
+              "url": "https://toyhou.se/queerly"
+            },
+            {
+              "name": "hey-stardust",
+              "url": "https://toyhou.se/hey-stardust"
             }
           ],
           "note": ""
         },
 
         {
-          "src": "/characters/lunaris/gallery/new_design.png",
-          "thumb": "/characters/lunaris/gallery/thumb/new_design.webp",
-          "created": "May 2026",
+          "src": "/characters/omen/gallery/omen_elegant--tragedy.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_elegant--tragedy.webp",
+          "created": "27 November 2018",
           "tags": [""],
           "artists": [
             {
-              "name": "deadliestt",
-              "url": ""
+              "name": "elegant--tragedy",
+              "url": "https://www.deviantart.com/elegant--tragedy"
             }
           ],
           "note": ""
         },
 
         {
-          "src": "/characters/lunaris/gallery/new_design.png",
-          "thumb": "/characters/lunaris/gallery/thumb/new_design.webp",
-          "created": "May 2026",
+          "src": "/characters/omen/gallery/omen_aste-ras.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_aste-ras.webp",
+          "created": "25 September 2020",
           "tags": [""],
           "artists": [
             {
-              "name": "deadliestt",
-              "url": ""
+              "name": "aste-ras",
+              "url": "https://www.deviantart.com/aste-ras"
+            }
+          ],
+          "note": "€30 commission"
+        },
+
+        {
+          "src": "/characters/omen/gallery/omen_demons-fall.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_demons-fall.webp",
+          "created": "16 April 2020",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "demons-fall",
+              "url": "https://www.deviantart.com/demons-fall"
             }
           ],
           "note": ""
+        },
+
+        {
+          "src": "/characters/omen/gallery/omen_otaktae.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_otaktae.webp",
+          "created": "13 November 2018",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "helyxx",
+              "url": "https://www.deviantart.com/helyxx"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/omen/gallery/omen_dry-oasis.jpg",
+          "thumb": "/characters/omen/gallery/thumb/omen_dry-oasis.webp",
+          "created": "23 January 2021",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "dry-oasis",
+              "url": "https://www.deviantart.com/dry-oasis"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/omen/gallery/omen_engare.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_engare.webp",
+          "created": "7 December 2018",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "engare",
+              "url": "https://www.deviantart.com/engare"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/omen/gallery/omen_ray-gunz.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_ray-gunz.webp",
+          "created": "27 November 2018",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "ray-gunz",
+              "url": "https://www.deviantart.com/ray-gunz"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/omen/gallery/omen_fintron.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_fintron.webp",
+          "created": "11 January 2019",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "fintron",
+              "url": "https://www.deviantart.com/fintron"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/omen/gallery/omen_vanillatoxin.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_vanillatoxin.webp",
+          "created": "August 2018",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "vanillatoxin",
+              "url": "https://www.deviantart.com/vanillatoxin"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/omen/gallery/omen_unknown_artist.png",
+          "thumb": "/characters/omen/gallery/thumb/omen_unknown_artist.webp",
+          "created": "11 January 2019",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "unknown artist",
+              "url": ""
+            }
+          ],
+          "note": "Unable to find original source, but this image has been attached to Omen for years. If you are the artist or know who the artist is, please contact me so I can give proper credit."
         }
       ]
     }

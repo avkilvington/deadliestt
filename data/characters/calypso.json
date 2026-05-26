@@ -1,0 +1,78 @@
+{
+  "gallery": [
+    {
+      "section": "",
+      "items": [
+        {
+          "src": "/characters/calypso/gallery/calypso_felinequine_2.png",
+          "thumb": "/characters/calypso/gallery/thumb/calypso_felinequine_2.webp",
+          "created": "26 August 2021",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "felinequine",
+              "url": "https://toyhou.se/felinequine"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/calypso/gallery/calypso_felinequine.png",
+          "thumb": "/characters/calypso/gallery/thumb/calypso_felinequine.webp",
+          "created": "26 August 2021",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "felinequine",
+              "url": "https://toyhou.se/felinequine"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/calypso/gallery/portrait.png",
+          "thumb": "/characters/calypso/gallery/thumb/portrait.webp",
+          "created": "26 August 2021",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "felinequine",
+              "url": "https://toyhou.se/felinequine"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/calypso/gallery/calypso_lindsey20771.png",
+          "thumb": "/characters/calypso/gallery/thumb/calypso_lindsey20771.webp",
+          "created": "6 October 2021",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "lindsey20771",
+              "url": "https://toyhou.se/Lindsey20771"
+            }
+          ],
+          "note": ""
+        },
+
+        {
+          "src": "/characters/calypso/gallery/calypso_deadly.png",
+          "thumb": "/characters/calypso/gallery/thumb/calypso_deadly.webp",
+          "created": "29 April 2026",
+          "tags": [""],
+          "artists": [
+            {
+              "name": "deadliestt",
+              "url": "https://deadliestt.com/"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

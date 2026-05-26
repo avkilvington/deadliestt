@@ -361,7 +361,9 @@ body.gallery-expanded .character-gallery {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 1rem;
     text-align: center;
     font-size: 0.9rem;
 }
@@ -371,7 +373,7 @@ body.gallery-expanded .character-gallery {
     font-size: 0.9rem;
     line-height: 1rem;
     text-transform: uppercase;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .lightbox-details a {

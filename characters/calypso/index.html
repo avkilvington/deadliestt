@@ -159,7 +159,7 @@
                     </section>
 
                     <section class="info-card" id="notes">
-                        <h2>Design Notes</h2>
+                        <h2>Trivia</h2>
                         <p>
                             Put design notes, old versions, trivia, symbolism, or creation history here.
                         </p>
@@ -169,58 +169,7 @@
             <section class="info-card" id="gallery">
                 <h2>Gallery</h2>
 
-                    <div class="gallery-grid">
-
-                        <button
-                            class="gallery-thumb"
-                            type="button"
-                            data-full="/characters/calypso/gallery/calypso_felinequine_2.png"
-                            data-credit="Art by felinequine"
-                            data-credit-link="https://toyhou.se/felinequine"
-                            data-date="26 August 2021"
-                            data-notes="">
-                            <img src="/characters/calypso/gallery/calypso_felinequine_2.png">
-                        </button>
-                        <button
-                            class="gallery-thumb"
-                            type="button"
-                            data-full="/characters/calypso/gallery/calypso_felinequine.png"
-                            data-credit="Art by felinequine"
-                            data-credit-link="https://toyhou.se/felinequine"
-                            data-date="26 August 2021"
-                            data-notes="">
-                            <img src="/characters/calypso/gallery/calypso_felinequine.png">
-                        </button>
-                        <button
-                            class="gallery-thumb"
-                            type="button"
-                            data-full="/characters/calypso/gallery/portrait.png"
-                            data-credit="Art by felinequine"
-                            data-credit-link="https://toyhou.se/felinequine"
-                            data-date="26 August 2021"
-                            data-notes="">
-                            <img src="/characters/calypso/gallery/portrait.png">
-                        </button>
-                        <button
-                            class="gallery-thumb"
-                            type="button"
-                            data-full="/characters/calypso/gallery/calypso_lindsey20771.png"
-                            data-credit="Art by lindsey20771"
-                            data-credit-link="https://toyhou.se/Lindsey20771"
-                            data-date="6 October 2021"
-                            data-notes="">
-                            <img src="/characters/calypso/gallery/calypso_lindsey20771.png">
-                        </button>
-                        <button
-                            class="gallery-thumb"
-                            type="button"
-                            data-full="/characters/calypso/gallery/calypso_deadly.png"
-                            data-credit="Art by deadliestt"
-                            data-credit-link="https://deadliestt.com/"
-                            data-date="29 April 2026"
-                            data-notes="">
-                            <img src="/characters/calypso/gallery/calypso_deadly.png">
-                        </button>
+                    <div id="gallery-grid" class="gallery-grid" data-gallery="/data/characters/calypso.json">
 
                     </div>
                     <button id="gallery-toggle" class="gallery-toggle" type="button">Open the Gallery</button>
@@ -232,18 +181,30 @@
         <div class="lightbox" id="lightbox" aria-hidden="true">
             <div class="lightbox-window">
 
+                <button id="lightbox-prev" class="lightbox-nav lightbox-prev" type="button">
+                &#10094;
+                </button>
+
+                <button id="lightbox-next" class="lightbox-nav lightbox-next" type="button">
+                &#10095;
+                </button>
+
             <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image viewer">
-            x
+            ×
             </button>
 
             <div class="lightbox-art">
                 <img id="lightbox-image" src="" alt="">
             </div>
 
+            <div class="lightbox-literature" id="lightbox-literature"></div>
+
             <div class="lightbox-details">
-                <p><a id="lightbox-credit" href="" target="_blank" rel="noopener noreferrer">Artist credit</a></p>
-                <p id="lightbox-date">Date</p>
-                <p id="lightbox-notes">Notes</p>
+                <div class="lightbox-meta">
+                    <p><a id="lightbox-credit" href="" target="_blank" rel="noopener noreferrer">Artist credit</a></p>
+                    <p id="lightbox-date">Date</p>
+                </div>
+                    <p id="lightbox-notes">Notes</p>
             </div>
 
     </div>
