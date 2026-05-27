@@ -85,6 +85,22 @@ hr {
   overflow: visible;
 }
 
+.info-card.omen-speech-card a {
+  color: var(--text-main-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8)
+}
+
+.info-card.omen-speech-card a:hover {
+  color: var(--hover-color);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                 0 0 10px rgba(255, 255, 255, 0.6),
+                 0 0 20px rgba(255, 255, 255, 0.4);
+    letter-spacing: .1em;
+}
+
 .omen-speech-img {
   position: absolute;
   left: -30px;

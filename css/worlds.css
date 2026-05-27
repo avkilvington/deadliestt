@@ -1,0 +1,49 @@
+/* ------- insert title later ------- */
+
+.directory-main {
+    width: min(1000px, calc(100% - 4rem));
+    margin: 4rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.worlds-directory {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.worlds-directory-card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 2rem;
+    align-items: center;
+
+    text-decoration: none;
+    color: inherit;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.worlds-directory-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.worlds-directory-card img {
+    width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.info-card h2 {
+    font-family: var(--header-font);
+    font-size: 2.2rem;
+    margin-top: -.7rem;
+    margin-bottom: 1rem;
+}
